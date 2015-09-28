@@ -1,0 +1,138 @@
+
+/*----------------------------------------------*/
+              /*slide rolling effect*/
+/*----------------------------------------------*/
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  z-index: 99999;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#home {
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    animation: fadein 4s;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#home {
+  background-image: url('https://images.unsplash.com/photo-1437422061949-f6efbde0a471?q=80&fm=jpg&s=e23055c9ba7686b8fe583fb8318a1f88');
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+}
+
+#slide1 {
+  background-image: url('http://www.wallideas.net/wp-content/uploads/2015/03/Dark-Grey-Background-Photo-HD-Wallpaper-2nwk9-Free.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+}
+
+#slide2 {
+
+}
+
+#slide3 {
+
+}
+
+#contact_slide {
+  background: rgba(0,0,0,1);
+}
+
+
+/*----------------------------------------------*/
+                    /*navbar*/
+/*----------------------------------------------*/
+
+.navbar-custom .navbar-header .navbar-brand {
+  margin-left: 20px;
+  font-size: 30px;
+  font-family: Lobster;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  color: white;
+  font-family: Lobster;
+  font-size: 20px;
+}
+
+.navbar-custom .navbar-nav > li > a:hover {
+  color: black;
+}
+
+.navbar-custom .navbar-brand {
+  color: white;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: rgba(0,0,0,.5);
+}
+
+.navbar-custom .navbar-right {
+  margin-right: 20px;
+}
+
+
+/*----------------------------------------------*/
+                    /*arrow*/
+/*----------------------------------------------*/
+
+.arrow {
+  z-index: 1;
+  position: absolute;
+  margin-left: 46%;
+  margin-top: 46%;
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
