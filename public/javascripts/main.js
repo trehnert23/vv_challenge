@@ -1,29 +1,35 @@
-// $(document).ready(function() {
-// 	$('#title').mousemove(function(e){
-// 		var amountMovedX = (e.pageX * -1 / 6);
-// 		var amountMovedY = (e.pageY * -1 / 6);
-// 		$(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
-// 	});
-// });
+$(document).ready(function() {
+	// NAVBAR SCROLL OPACITY EFFECT
+	$(document).scroll(function() {
+	  var dHeight = $(this).height()-$(window).height();
+	  if (dHeight >= $(this).scrollTop()) {
+	    $('nav').css('background', 'rgba(0,0,0,' + $(this).scrollTop() / dHeight + ')');
+	  }
+	});
 
 
-$(document).scroll(function() {
-  var dHeight = $(this).height()-$(window).height();
-  if (dHeight >= $(this).scrollTop()) {
-    $('nav').css('background', 'rgba(0,0,0,' + $(this).scrollTop() / dHeight + ')');
-  }
+	$("#home").click(function() {
+		scrollToAnchor('home');
+	});
+
+	$("#slide1_button").click(function() {
+		scrollToAnchor('slide1');
+	});
+
+	$("#slide2_button").click(function() {
+		scrollToAnchor('slide2');
+	});
+
+	$("#contact_slide_button").click(function() {
+		scrollToAnchor('contact_slide');
+	});
+
+
 });
 
 
-$('a[href^="#"]').on('click', function(event) {
-
-    var target = $( $(this).attr('href') );
-
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-
-});
+function scrollToAnchor(aid) {
+	var aTag = $("a[name='"+ aid + "']");
+	$('html,body').animate({
+		scrollTop: aTag.offset().top},2000);
+}

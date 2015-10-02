@@ -33,13 +33,6 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
-.header {
-  text-align: center;
-  font-size: 175%;
-  color: #fff;
-  text-shadow: 0 2px 2px #000;
-}
-
 #home {
     -webkit-animation: fadein 4s; /* Safari and Chrome */
     animation: fadein 4s;
@@ -59,18 +52,17 @@ body {
 }
 
 #slide1 {
-  background-image: url('http://www.wallideas.net/wp-content/uploads/2015/03/Dark-Grey-Background-Photo-HD-Wallpaper-2nwk9-Free.jpeg');
+  background-image: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&fm=jpg&s=eb2a21cc0655327e3295d3426e805607');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 0px -100px;
 }
 
 #slide2 {
-
-}
-
-#slide3 {
-
+  background-image: url('http://www.wallideas.net/wp-content/uploads/2015/03/Dark-Grey-Background-Photo-HD-Wallpaper-2nwk9-Free.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
 }
 
 #contact_slide {
@@ -82,19 +74,34 @@ body {
                     /*navbar*/
 /*----------------------------------------------*/
 
-.navbar-custom .navbar-header .navbar-brand {
+.navbar-custom .navbar-brand {
   margin-left: 20px;
   font-size: 30px;
+  background-color: transparent;
+  border: transparent;
   font-family: Lobster;
 }
 
-.navbar-custom .navbar-nav > li > a {
+/*.navbar-custom .navbar-nav > li > a {
   color: white;
   font-family: Lobster;
   font-size: 20px;
 }
 
 .navbar-custom .navbar-nav > li > a:hover {
+  color: black;
+}*/
+
+.navbar-custom .navbar-nav > button {
+  background-color: transparent;
+  border: transparent;
+  margin-top: 1%;
+  color: white;
+  font-family: Lobster;
+  font-size: 22px;
+}
+
+.navbar-custom .navbar-nav > button:hover {
   color: black;
 }
 
