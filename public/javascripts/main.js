@@ -8,8 +8,8 @@ $(document).ready(function() {
 	});
 
 
-	$("#home").click(function() {
-		scrollToAnchor('home');
+	$("#home_link").click(function() {
+		scrollToAnchor('home_link');
 	});
 
 	$("#slide1_button").click(function() {

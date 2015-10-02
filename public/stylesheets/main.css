@@ -82,15 +82,20 @@ body {
   font-family: Lobster;
 }
 
-/*.navbar-custom .navbar-nav > li > a {
+#home_link {
+  margin-left: 20px;
+  font-size: 30px;
   color: white;
+  background-color: transparent;
+  border: transparent;
   font-family: Lobster;
-  font-size: 20px;
+  outline: none;
 }
 
-.navbar-custom .navbar-nav > li > a:hover {
+#home_link:hover {
   color: black;
-}*/
+  outline: none;
+}
 
 .navbar-custom .navbar-nav > button {
   background-color: transparent;
@@ -99,10 +104,12 @@ body {
   color: white;
   font-family: Lobster;
   font-size: 22px;
+  outline: none;
 }
 
 .navbar-custom .navbar-nav > button:hover {
   color: black;
+  outline: none;
 }
 
 .navbar-custom .navbar-brand {
