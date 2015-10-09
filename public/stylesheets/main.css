@@ -45,7 +45,7 @@ body {
 
 #home {
   background-image: url('https://images.unsplash.com/photo-1437422061949-f6efbde0a471?q=80&fm=jpg&s=e23055c9ba7686b8fe583fb8318a1f88');
-  background-size: 100%;
+  background-size: 300vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0px -100px;
@@ -53,20 +53,21 @@ body {
 
 #slide1 {
   background-image: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&fm=jpg&s=eb2a21cc0655327e3295d3426e805607');
-  background-size: 100%;
+  background-size: 300vh;
   background-repeat: no-repeat;
   background-position: 0px -100px;
 }
 
-#slide2 {
+#about {
   background-image: url('http://www.wallideas.net/wp-content/uploads/2015/03/Dark-Grey-Background-Photo-HD-Wallpaper-2nwk9-Free.jpeg');
-  background-size: 100%;
+  background-size: 300vh;
   background-repeat: no-repeat;
   background-position: 0px -100px;
 }
 
 #contact_slide {
   background: rgba(0,0,0,1);
+  height: 100vh;
 }
 
 
@@ -108,7 +109,7 @@ body {
 }
 
 .navbar-custom .navbar-nav > button:hover {
-  color: black;
+  color: rgba(84,84,84,1);
   outline: none;
 }
 
@@ -116,8 +117,8 @@ body {
   color: white;
 }
 
-.navbar-custom .navbar-brand:hover {
-  color: rgba(0,0,0,.5);
+#home_link:hover {
+  color: rgba(84,84,84,1);
 }
 
 .navbar-custom .navbar-right {
@@ -126,16 +127,45 @@ body {
 
 
 /*----------------------------------------------*/
-                    /*arrow*/
+             /*home page formatting*/
 /*----------------------------------------------*/
 
-.arrow {
-  z-index: 1;
-  position: absolute;
-  margin-left: 46%;
-  margin-top: 46%;
-  opacity: 0.5;
+
+.home_text {
+  font-family: Lobster;
+  width: 140vh;
+  text-align: center;
+  color: white;
+  font-size: 7vh;
+  margin-top: 4vh;
 }
+
+
+
+/*----------------------------------------------*/
+             /*about page formatting*/
+/*----------------------------------------------*/
+
+.myphoto {
+  position: relative;
+  width: 300px;
+  margin-left: -10vh;
+  margin-top: -10vh;
+  display: block;
+  border-radius: 200px;
+  border: 2px solid white;
+}
+
+
+/*----------------------------------------------*/
+             /*contact page formatting*/
+/*----------------------------------------------*/
+
+
+
+
+
+
 
 
 
