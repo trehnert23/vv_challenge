@@ -51,7 +51,7 @@ body {
   background-position: 0px -100px;
 }
 
-#slide1 {
+#projects {
   background-image: url('https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&fm=jpg&s=eb2a21cc0655327e3295d3426e805607');
   background-size: 300vh;
   background-repeat: no-repeat;
@@ -74,6 +74,11 @@ body {
 /*----------------------------------------------*/
                     /*navbar*/
 /*----------------------------------------------*/
+
+.navbar-toggle {
+  background-color: black;
+}
+
 
 .navbar-custom .navbar-brand {
   margin-left: 20px;
@@ -158,13 +163,57 @@ body {
 
 
 /*----------------------------------------------*/
-             /*contact page formatting*/
+             /*project page formatting*/
 /*----------------------------------------------*/
 
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
+ul.img-list li {
+  display: inline-block;
+  height: 150px;
+  margin: 0 10em 10em 0;
+  position: relative;
+  width: 150px;
+}
 
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+}
 
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
 
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 250px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  opacity: 0;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
 
 
 
