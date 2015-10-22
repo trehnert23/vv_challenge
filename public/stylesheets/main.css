@@ -193,8 +193,8 @@ body {
 }
 
 .project_list {
+  width: 97%;
   margin-top: -50px;
-  margin-left: -100px;
   text-align: center;
 }
 
@@ -202,6 +202,7 @@ body {
   width: 50px;
   text-decoration: none;
   color: white;
+  font-size: 4vh;
 }
 
 .list_link1:hover {
@@ -213,6 +214,7 @@ body {
   width: 50px;
   text-decoration: none;
   color: white;
+  font-size: 4vh;
 }
 
 .list_link2:hover {
@@ -224,6 +226,7 @@ body {
   width: 50px;
   text-decoration: none;
   color: white;
+  font-size: 4vh;
 }
 
 .list_link3:hover {
@@ -235,6 +238,7 @@ body {
   width: 50px;
   text-decoration: none;
   color: white;
+  font-size: 4vh;
 }
 
 .list_link4:hover {
@@ -246,6 +250,7 @@ body {
   width: 50px;
   text-decoration: none;
   color: white;
+  font-size: 4vh;
 }
 
 .list_link5:hover {
@@ -285,7 +290,7 @@ body {
   position: absolute;
   visibility: hidden;
   font-family: arial black;
-  margin-left: 45vh;
+  margin-left: 25vh;
 }
 
 .project_text {
@@ -300,7 +305,8 @@ body {
 
 .arrow_div {
   visibility: visible;
-  margin-top: 10vh;
+  margin-top: 8vh;
+  margin-left: -7vh;
   position: absolute;
 }
 
@@ -324,8 +330,49 @@ body {
 
 /*////////////////////////////////////////*/
 
+.contact_bubbles {
+  text-align: center;
+}
 
+.contact_images {
+  width: 80px;
+  position: absolute;
+  visibility: visible;
+}
 
+.box {
+  border-radius: 50%;
+  margin: 50px;
+  background: grey;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  position: relative;
+}
 
+.box:hover {
+  -webkit-transform: rotate(360deg);
+  background: #1E90FF;
+  width: 300px;
+  border-radius: 2%;
+}
+
+.box:hover > .contact_images {
+  visibility: hidden;
+}
+
+.rotate {
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.rotate:hover {
+  -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
 
 
