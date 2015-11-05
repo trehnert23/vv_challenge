@@ -3,9 +3,11 @@ $(document).ready(function() {
 	$(document).scroll(function() {
 	  var dHeight = $(this).height()-$(window).height();
 	  if (dHeight >= $(this).scrollTop()) {
-	    $('nav').css('background', 'rgba(30,144,255,' + $(this).scrollTop() / dHeight + ')');
+	    $('nav').css('background', 'rgba(147,147,147,' + $(this).scrollTop() / dHeight + ')');
 	  }
 	});
+
+	
 
 
 	$("#home_link").click(function() {
