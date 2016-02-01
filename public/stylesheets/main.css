@@ -320,6 +320,7 @@ body {
   margin-top: -5vh;
   margin-left: -5vh;
   margin-right: 5vh;
+  float: left;
 }
 
 .box {
@@ -370,5 +371,20 @@ body {
   margin: 5vh;
   margin-left: 30vh;
   margin-top: -50vh;
+  float: left;
+}
+
+.about_me_paragraph {
+  font-family: Walter Turncoat;
+  width: 60vh;
+  text-align: center;
+  color: white;
+  font-size: 4vh;
+  margin-top: -55vh;
+  margin-left: 10vh;
+  position: relative;
+  display: block;
+  float: right;
+
 }
 
