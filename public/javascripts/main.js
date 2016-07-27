@@ -1,25 +1,25 @@
 $(document).ready(function() {
 	// NAVBAR SCROLL OPACITY EFFECT
-	$(document).scroll(function() {
-	  var dHeight = $(this).height()-$(window).height();
-	  if (dHeight >= $(this).scrollTop()) {
-	    $('nav').css('background', 'rgba(147,147,147,' + $(this).scrollTop() / dHeight + ')');
-	  }
+	$(window).scroll(function () {
+	      //if you hard code, then use console
+	      //.log to determine when you want the 
+	      //nav bar to stick.  
+	      console.log($(window).scrollTop())
+	    if ($(window).scrollTop() > 728) {
+	    	$('#nav_bar').removeClass('nav_bar_bottom');
+	        $('#nav_bar').addClass('navbar-fixed');
+	    }
+	    if ($(window).scrollTop() < 728) {
+	    	$('#nav_bar').addClass('nav_bar_bottom');
+	        $('#nav_bar').removeClass('navbar-fixed');
+
+	    }
 	});
 
-	
 
-
-	$("#home_link").click(function() {
-		scrollToAnchor('home_link');
-	});
 
 	$("#slide1_button").click(function() {
 		scrollToAnchor('slide1');
-	});
-
-	$("#slide2_button").click(function() {
-		scrollToAnchor('slide2');
 	});
 
 

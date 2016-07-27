@@ -11,17 +11,13 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: Nunito;
+  font-family: Karla;
 }
 
 .slide {
   position: relative;
-  padding: 25vh 10%;
   min-height: 100vh;
-  width: 100vw;
-  box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
-	transform-style: inherit;
+  width: 100%;
 }
 
 .title {
@@ -33,36 +29,28 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
-#home {
-    -webkit-animation: fadein 4s; /* Safari and Chrome */
-    animation: fadein 4s;
-}
-
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-#home {
-  background-image: url('/images/newyork.jpg');
-  background-size: 300vh;
-  background-attachment: fixed;
+.home {
+  height: 100vh;
+  background-image: url('/images/homeimage.jpg');
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#projects {
-  background-image: url('/images/wood.jpg');
-  background-size: 300vh;
-  background-repeat: no-repeat;
-  background-position: 0px -100px;
+.home:before {
+    content: " ";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.2),rgba(10,15,68,1.0));
 }
 
-#about {
-  background-image: url('/images/project_slide.jpg');
-  background-size: 300vh;
-  background-repeat: no-repeat;
-  background-position: 0px -100px;
+#information {
+  position: relative;
+  background-color: white;
 }
 
 
@@ -70,17 +58,11 @@ body {
                     /*navbar*/
 /*----------------------------------------------*/
 
-.navbar-toggle {
-  background-color: black;
-}
-
-
-.navbar-custom .navbar-brand {
-  margin-left: 20px;
-  font-size: 30px;
-  background-color: transparent;
-  border: transparent;
-  font-family: Lobster;
+.navbar-toggler {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: none;
 }
 
 #home_link {
@@ -89,7 +71,7 @@ body {
   color: black;
   background-color: transparent;
   border: transparent;
-  font-family: Lobster;
+  font-family: Karla;
   outline: none;
 }
 
@@ -98,31 +80,18 @@ body {
   outline: none;
 }
 
-.navbar-custom .navbar-nav > button {
-  background-color: transparent;
-  border: transparent;
-  margin-top: 1%;
-  color: black;
-  font-family: Lobster;
-  font-size: 22px;
-  outline: none;
+#nav_bar {
+  z-index: 99999;
+  border: 0;
+  background-color: white;
+  border-radius: 0px;
+  height: 50px;
+  width: 100%;
 }
 
-.navbar-custom .navbar-nav > button:hover {
-  color: rgba(84,84,84,1);
-  outline: none;
-}
-
-.navbar-custom .navbar-brand {
-  color: black;
-}
-
-#home_link:hover {
-  color: rgba(84,84,84,1);
-}
-
-.navbar-custom .navbar-right {
-  margin-right: 20px;
+.nav_bar_bottom {
+  bottom: 0;
+  position: absolute;
 }
 
 
@@ -130,261 +99,94 @@ body {
              /*home page formatting*/
 /*----------------------------------------------*/
 
-
-.home_text {
-  font-family: Lobster;
-  width: 140vh;
-  text-align: center;
-  color: black;
-  font-size: 7vh;
-  margin-top: 1vh;
-}
-
-
-/*----------------------------------------------*/
-             /*project page formatting*/
-/*----------------------------------------------*/
-
-.projects_header {
-  color: white;
-  font-family: Lobster;
-  font-size: 60px;
-  text-align: center;
-  margin-top: -18vh;
-}
-
-.project_title_list {
-  width: 100%;
-  text-align: left;
-  color: white;
-  font-size: 30px;
-  font-family: Lobster;
-  margin-top: 10vh;
-}
-
-.list_item {
-  list-style-type: none;
-  margin-bottom: 20px;
-}
-
-.project_list li {
-  display: inline;
-}
-
-.project_list {
-  width: 97%;
-  margin-top: -50px;
-  text-align: center;
-}
-
-.list_link1 {
-  width: 50px;
-  text-decoration: none;
-  color: white;
-  font-size: 4vh;
-}
-
-.list_link1:hover {
-  text-decoration: none;
-  color: #7171C6;
-}
-
-.list_link2 {
-  width: 50px;
-  text-decoration: none;
-  color: white;
-  font-size: 4vh;
-}
-
-.list_link2:hover {
-  text-decoration: none;
-  color: #7171C6;
-}
-
-.list_link3 {
-  width: 50px;
-  text-decoration: none;
-  color: white;
-  font-size: 4vh;
-}
-
-.list_link3:hover {
-  text-decoration: none;
-  color: #7171C6;
-}
-
-.list_link4 {
-  width: 50px;
-  text-decoration: none;
-  color: white;
-  font-size: 4vh;
-}
-
-.list_link4:hover {
-  text-decoration: none;
-  color: #7171C6;
-}
-
-.list_link5 {
-  width: 50px;
-  text-decoration: none;
-  color: white;
-  font-size: 4vh;
-}
-
-.list_link5:hover {
-  text-decoration: none;
-  color: #7171C6;
-}
-
-.list_link1:hover > .project_div {
-  visibility: visible;
-}
-
-.list_link2:hover > .project_div {
-  visibility: visible;
-}
-
-.list_link3:hover > .project_div {
-  visibility: visible;
-}
-
-.list_link4:hover > .project_div {
-  visibility: visible;
-}
-
-.list_link5:hover > .project_div {
-  visibility: visible;
-}
-
-.project_images {
-  margin-top: 5vh;
-  margin-left: 30vh;
-  width: 90vh;
-  height: 55vh;
-  border: 2px solid white;
-}
-
-.project_div {
-  position: absolute;
-  visibility: hidden;
-  font-family: arial black;
-  margin-left: 25vh;
-}
-
-.project_text {
-  font-size: 18px;
-  text-align: left;
-  color: white;
-  width: 40vh;
-  position: absolute;
-  margin-top: -50vh;
-  margin-left: -30vh;
-}
-
-.arrow_div {
-  visibility: visible;
-  margin-top: 8vh;
-  margin-left: -7vh;
-  position: absolute;
+button:focus {
+  outline: 0;
 }
 
 .arrow {
-  width: 40vh;
-  margin-left: -120vh;
-  -webkit-transform: rotate(20deg);
+  width: 90%;
 }
 
-.arrow_text {
-  font-family: Walter Turncoat;
-  color: #1E90FF;
-  font-size: 50px;
-  margin-left: 40vh;
-  margin-top: -10vh;
+.arrow_container {
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 45%;
+  width: 8%;
+  z-index: 100;
 }
 
-.project_title_list:hover .arrow_div {
-  visibility: hidden;
-}
-
-/*----------------------------------------------*/
-             /*contact page formatting*/
-/*----------------------------------------------*/
-
-.contact_bubbles {
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  width: 20%;
-  /*height: 80vh;*/
-  margin-top: -5vh;
-  margin-left: -5vh;
-  margin-right: 5vh;
-  float: left;
-}
-
-.box {
-  border-radius: 50%;
-  margin-bottom: 5vh;
-  background: rgb(200,200,200);
-  width: 15vh;
-  height: 15vh;
-  /*margin-left: 80%;*/
-  /*display: inline-block;*/
-  position: relative;
-  transition: all .3s;
-}
-
-.box:hover {
-  background: white;
-  border-radius: 50%;
-  box-shadow: 0px 0 0 0 #FFF,  0px 0 0 10px #1E90FF;
-}
-
-.contact_images {
-  margin-top: 18%;
-  position: relative;
-  visibility: visible;
-}
-
-.linkedin_image {
-  width: 60%;
-  margin-top: 18%;
-}
-
-.github_image {
-  width: 60%;
-  margin-top: 20%;
-}
-
-.email_image {
-  width: 80%;
-  margin-top: 10%;
-}
-
-.myphoto {
-  position: relative;
-  width: 40vh;
-  display: block;
-  border-radius: 200px;
-  border: 2px solid white;
-  margin: 5vh;
-  margin-left: 30vh;
-  margin-top: -50vh;
-  float: left;
-}
-
-.about_me_paragraph {
-  font-family: Walter Turncoat;
-  width: 60vh;
-  text-align: center;
+.opening_text {
+  z-index: 2;
+  line-height: 60px;
   color: white;
-  font-size: 4vh;
-  margin-top: -55vh;
-  margin-left: 10vh;
-  position: relative;
-  display: block;
-  float: right;
-
+  font-size: 60px;
+  margin-top: 13%;
+  font-family: Karla;
 }
+
+.opening_text2 {
+  margin-top: 20px;
+  z-index: 2;
+  color: white;
+  font-size: 15px;
+  font-family: Karla;
+}
+
+.home_buttons {
+  margin-top: 20px;
+  font-family: Karla;
+}
+
+.home_buttons button {
+  z-index: 2;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid white;
+}
+
+#slide1_button {
+  background: transparent;
+  border: none;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+
+/*----------------------------------------------*/
+             /*info page formatting*/
+/*----------------------------------------------*/
+
+.section_two_header {
+  text-align: center;
+  font-size: 30px;
+  font-family: Karla;
+  margin-top: 8%;
+  margin-bottom: 2%;
+}
+
+.section_two_text {
+  margin-top: 10%;
+  font-family: Karla;
+  font-size: 20px;
+  text-align: center;
+}
+
+.section_two_text2 {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+
+
+
+
+
 
