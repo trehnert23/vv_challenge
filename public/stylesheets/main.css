@@ -130,6 +130,10 @@
     font-family: Karla;
   }
 
+  .home_buttons button:hover {
+    background: rgba(10,15,68,1.0);
+  }
+
   .home_buttons button {
     z-index: 2;
     color: white;
