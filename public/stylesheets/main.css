@@ -83,6 +83,8 @@
   }
 
   .nav_bar_bottom {
+    z-index: 99999;
+    margin-top: -50px;
     bottom: 0;
     position: absolute;
   }
