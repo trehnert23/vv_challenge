@@ -226,6 +226,11 @@
     margin-bottom: 10%;
   }
 
+  .footer_link:hover {
+    text-decoration: none;
+    color: orange;
+  }
+
   .line1 {
       width: 380px;
       height: 47px;
